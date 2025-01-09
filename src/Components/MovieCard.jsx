@@ -27,4 +27,4 @@ function MovieCard({ allMovieData, loading }) {
   )
 }
 
-export default MovieCard
+export default MovieCard;

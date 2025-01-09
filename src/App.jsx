@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
-import MovieCard from './components/MovieCard';
+
 import Searchbar from './Components/Searchbar';
 import Navbar from './components/Navbar';
+import MovieCard from './components/MovieCard';
 
 
 
@@ -40,6 +41,8 @@ function App() {
         <Searchbar searchMovie={searchMovie} setSearchMovie={setSearchMovie} fetchMovieData={fetchMovieData} />
         {error && <div className="error-message">{error}</div>}
         <MovieCard allMovieData={allMovieData} loading={loading} />
+          
+          
       </div>
     
     </>
