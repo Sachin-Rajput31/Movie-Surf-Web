@@ -10,10 +10,10 @@ const Navbar = () => {
         </div>
         <div className='right'>
             <ul className='flex space-x-4 text-white justify-center'>
-<a href='/Home'>Home</a>
-<a href='/About'>About</a>
-<a href='/Contact'>Contact</a>
-<a href='/Services'>Services</a>
+<a>Home</a>
+<a>About</a>
+<a>Contact</a>
+<a>Services</a>
 
             </ul>
 
