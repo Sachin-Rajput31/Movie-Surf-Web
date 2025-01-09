@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import MovieCard from './components/MovieCard';
-import SearchBar from './components/Searchbar';
-import Home from './Home';
+import Searchbar from './Components/Searchbar';
+
+
 
 function App() {
   const [allMovieData, setAllMovieData] = useState([]);
@@ -34,7 +35,7 @@ function App() {
     <div>
       <Navbar />
       <div className="bg">
-        <SearchBar searchMovie={searchMovie} setSearchMovie={setSearchMovie} fetchMovieData={fetchMovieData} />
+        <Searchbar searchMovie={searchMovie} setSearchMovie={setSearchMovie} fetchMovieData={fetchMovieData} />
         {error && <div className="error-message">{error}</div>}
         <MovieCard allMovieData={allMovieData} loading={loading} />
       </div>
